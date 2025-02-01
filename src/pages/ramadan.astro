@@ -1,0 +1,106 @@
+---
+import Mainlayout from "../layouts/mainlayout.astro";
+import DonationCard from "../components/DonationCard.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Ramadan 2024"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+    <div class="row justify-content-center pt-100">
+        <DonationCard program={[]} />
+    </div>
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Nourishing Communities During the Holy Month
+                            </h3>
+                            <p>
+                                Join our Ramadan Support Program to ensure that
+                                individuals and families have access to
+                                essential nutrition and support during the holy
+                                month. Your contribution helps us provide food
+                                packs, iftar meals, and other assistance to
+                                those in need.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Holy Month
+                                    Assistance: Providing nourishment.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Essential
+                                    Support: Fostering unity.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Ramadan Relief:
+                                    Offering sustenance.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Changing lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg"
+                                    alt="Project Image"  
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Support</h3>
+                <p>
+                    Your support for our Ramadan Support Program has a profound
+                    impact on individuals and families in need during the holy
+                    month. By contributing, you're providing essential
+                    nutrition, support, and comfort to those fasting and
+                    observing Ramadan, ensuring that they can celebrate with joy
+                    and gratitude. Together, we can make a meaningful difference
+                    by nourishing communities and fostering unity during this
+                    sacred time.
+                </p>
+
+                <h3>Ways to Contribute</h3>
+                <p>
+                    There are various ways you can contribute to our Ramadan
+                    Support Program. Whether by making a donation, volunteering
+                    your time for distribution efforts, or organizing
+                    fundraising events, your support ensures that everyone can
+                    observe Ramadan with dignity and sustenance.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

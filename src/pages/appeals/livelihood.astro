@@ -1,0 +1,104 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Livelihood Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Empowering Sustainable Futures for Communities
+                            </h3>
+                            <p>
+                                Join our Livelihood Appeal to empower
+                                communities with sustainable opportunities for
+                                economic growth and self-reliance. Your support
+                                helps us provide resources, training, and
+                                assistance to individuals and families striving
+                                to build better futures.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Sustainable
+                                    Empowerment: Building futures.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Economic Growth:
+                                    Creating opportunities.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Self-Reliance
+                                    Support: Nurturing independence.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Changing lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Contribution</h3>
+                <p>
+                    Your contribution to our Livelihood Appeal has a direct
+                    impact on the lives of individuals and families striving for
+                    economic empowerment. By providing resources, training, and
+                    support, you're helping them build sustainable livelihoods,
+                    break the cycle of poverty, and achieve self-reliance.
+                    Together, we can empower communities to create brighter
+                    futures for themselves and future generations.
+                </p>
+
+                <h3>Ways to Support</h3>
+                <p>
+                    There are various ways you can support our Livelihood
+                    Appeal. Whether through financial contributions,
+                    volunteering your expertise for skills development programs,
+                    or supporting small business initiatives, your support helps
+                    create sustainable livelihoods and economic opportunities
+                    for communities in need.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

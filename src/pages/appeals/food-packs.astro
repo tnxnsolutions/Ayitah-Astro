@@ -1,0 +1,103 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Food Pack Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Providing Essential Nutrition to Those in Need
+                            </h3>
+                            <p>
+                                Join our Food-Packs Appeal to ensure that
+                                individuals and families facing food insecurity
+                                have access to essential nutrition. Your support
+                                helps us make a meaningful difference in the
+                                lives of those struggling to put food on the
+                                table.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Essential
+                                    Nutrition: Fighting hunger.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Nourishing
+                                    Support: Vital sustenance.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Community
+                                    Solidarity: Helping hands.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Making a difference.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Support</h3>
+                <p>
+                    Your support for our Food-Packs Appeal directly impacts
+                    those in need. With your contributions, we can continue to
+                    provide essential nutrition to individuals and families
+                    facing food insecurity, offering them comfort and sustenance
+                    during challenging times. Together, we can make a
+                    significant difference in the fight against hunger and food
+                    insecurity.
+                </p>
+
+                <h3>Ways to Contribute</h3>
+                <p>
+                    There are various ways you can contribute to our Food-Packs
+                    Appeal. Whether by making a monetary donation, volunteering
+                    at our food distribution centers, or organizing a food drive
+                    in your community, your support ensures that no one goes
+                    hungry.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

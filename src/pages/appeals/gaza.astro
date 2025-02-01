@@ -1,0 +1,107 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Gaza Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Providing Relief in <br /> Times of Crisis
+                            </h3>
+                            <p>
+                                Amidst the ongoing humanitarian crisis in Gaza,
+                                Al-Fakih Trust is committed to providing
+                                immediate relief and support to the affected
+                                communities. With your generous contributions,
+                                we can make a tangible difference in the lives
+                                of those facing adversity. Together, we can
+                                provide essential aid and help rebuild hope in
+                                Gaza.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Urgent Relief:
+                                    Food, Water, Shelter.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Healthcare
+                                    Support: Medical Resources.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Psychosocial
+                                    Aid: Trauma Relief.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Infrastructure
+                                    Rebuild: Schools, Hospitals.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+
+                        </div>
+                    </div>
+                </div>
+                <h3>How Your Donation Makes a Difference</h3>
+                <p>
+                    Your donation to Al-Fakih Trust's Gaza Appeal directly
+                    supports urgent relief efforts, including providing
+                    essential aid like food, water, medical supplies, and
+                    shelter to families affected by the crisis. Your generosity
+                    also aids in supporting healthcare facilities, offering
+                    psychosocial support services, and rebuilding vital
+                    infrastructure. Together, we can make a tangible difference
+                    in the lives of those facing adversity in Gaza.
+                </p>
+
+                <h3>Ways to Donate</h3>
+                <p>
+                    There are several ways you can contribute to Al-Fakih Trust's
+                    Gaza Appeal and support our efforts to provide relief and
+                    assistance to the people of Gaza. Choose the option that
+                    works best for you:
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>
+

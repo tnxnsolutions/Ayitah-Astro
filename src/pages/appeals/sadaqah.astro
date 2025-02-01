@@ -1,0 +1,102 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Sadaqah Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Spreading Compassion and Support to Those in
+                                Need
+                            </h3>
+                            <p>
+                                Join our Sadaqah Appeal to spread compassion and
+                                support to those facing adversity. Your Sadaqah
+                                enables us to provide essential aid, comfort,
+                                and hope to individuals and families in need of
+                                assistance.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Acts of
+                                    Kindness: Making a difference.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Compassionate
+                                    Giving: Spreading support.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Providing Aid:
+                                    Offering help.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Changing lives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Sadaqah</h3>
+                <p>
+                    Your support for our Sadaqah Appeal has a direct impact on
+                    the lives of individuals and families in need. By
+                    contributing, you're providing essential aid, comfort, and
+                    hope to those facing adversity. Together, we can make a
+                    positive difference in the world by spreading compassion and
+                    support to those who need it most.
+                </p>
+
+                <h3>Ways to Give</h3>
+                <p>
+                    There are various ways to give to our Sadaqah Appeal. You
+                    can make a monetary donation, volunteer your time for
+                    outreach programs, or donate essential items such as food,
+                    clothing, and blankets. Your support ensures that those in
+                    need receive the help and compassion they deserve.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

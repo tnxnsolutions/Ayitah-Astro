@@ -1,0 +1,102 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Build a Masjid Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Constructing Places of Worship for Communities
+                                in Need
+                            </h3>
+                            <p>
+                                Join our Build-a-Masjid Appeal to help construct
+                                mosques and places of worship for communities in
+                                need. Your support enables us to create sacred
+                                spaces where individuals can gather for prayer,
+                                reflection, and community bonding.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Building
+                                    mosques.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Constructing
+                                    connections.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Fostering faith.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Making a difference.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Contribution</h3>
+                <p>
+                    Your contribution to our Build-a-Masjid Appeal has a
+                    profound impact on communities in need. With your support,
+                    we can construct mosques and places of worship that serve as
+                    centers for spiritual guidance, community support, and
+                    educational programs. Together, we can create lasting
+                    legacies that benefit generations to come.
+                </p>
+
+                <h3>Ways to Support</h3>
+                <p>
+                    There are several ways you can support our Build-a-Masjid
+                    Appeal. Whether by making a financial contribution,
+                    volunteering your time for construction projects, or
+                    spreading awareness in your community, your support helps us
+                    create meaningful spaces for spiritual growth and community
+                    development
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

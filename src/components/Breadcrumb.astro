@@ -1,0 +1,37 @@
+---
+const { appealname, appealimage, } = Astro.props;
+
+
+---
+
+
+<section class="page-title-area text-white">
+    <div class="container">
+        <!--======  Page-title-Inner ======-->
+        <div class="page-title-inner text-center">
+            <img src={appealimage} alt="{appealname}" class="background-image">
+            <h1 class="page-title">{appealname}</h1>
+            <div class="gd-breadcrumb">
+                <span class="breadcrumb-entry"><a href="/">Home</a></span>
+                <span class="separator"></span>
+                <span class="breadcrumb-entry active">{appealname}</span>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+    .page-title-area {
+position: relative;
+}
+
+.background-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover; /* Ensures the image covers the entire area */
+z-index: -1; /* Places the image behind other content */
+}
+
+</style>

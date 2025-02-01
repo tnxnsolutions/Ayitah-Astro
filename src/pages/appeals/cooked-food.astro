@@ -1,0 +1,101 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Cooked Food Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Providing Warm Meals to Those in Need
+                            </h3>
+                            <p>
+                                Join our Cooked-Food Appeal to ensure that
+                                individuals and families facing hunger have
+                                access to warm and nutritious meals. Your
+                                support helps us make a meaningful difference in
+                                the lives of those struggling to put food on the
+                                table.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Warm Meals:
+                                    Nourishing sustenance.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Fighting Hunger:
+                                    Essential support.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Nutritious Food:
+                                    Vital nourishment.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Helping Hands:
+                                    Community solidarity.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Support</h3>
+                <p>
+                    Your support for our Cooked-Food Appeal has a direct impact
+                    on those in need. With your contributions, we can continue
+                    to provide warm and nutritious meals to individuals and
+                    families facing hunger, offering them comfort and sustenance
+                    during challenging times. Together, we can make a difference
+                    in the fight against hunger and food insecurity.
+                </p>
+
+                <h3>Ways to Donate</h3>
+                <p>
+                    There are several ways you can contribute to our Cooked-Food
+                    Appeal. Whether by making a monetary donation, volunteering
+                    your time at our soup kitchens, or donating food supplies,
+                    your support ensures that no one goes hungry.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

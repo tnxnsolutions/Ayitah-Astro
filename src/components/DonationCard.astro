@@ -1,0 +1,82 @@
+---
+// Import the fetchPrograms function
+import { fetchPrograms } from "./api.js";
+
+type Program = {
+  program_id: number;
+  program_name: string;
+  image: string;
+  program_image_flag: string;
+  program_rate_id: number | null;
+  program_rate: number | null;
+  pr_start_date: string | null;
+  pr_end_date: string | null;
+  country_id: number | null;
+  country_name: string | null;
+  any_amount: string;
+  program_is_animal: string;
+  other_amount: string;
+  donation_url: string;
+  direct_debit_url: string;
+  programId: number;
+};
+
+// Use fetchPrograms to get data
+const data = await fetchPrograms();
+const responseData: Program[] = data; // Assuming the response is an array of programs
+// var programId: any = [];
+var { programId } = Astro.props;
+const pound = "£";
+---
+
+<section class="recent-product-section pb-90">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title text-center mb-50">
+          <h2 style="color:black;">Our Donation Programs</h2>
+        </div>
+      </div>
+    </div>
+    <section class="recent-product-section pb-30">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title text-center mb-50">
+              <div class="recent-product-slider wow fadeInUp">
+                {responseData
+                  .filter((program) => !programId || !programId.length || programId.includes(program.program_id))
+                  .slice(0, 8)
+                  .map((program) => (
+                    <div key={program.program_id} class="single-product-item mb-30 wow fadeInUp">
+                      <div class="discount">{program.country_name ? program.country_name : "Pakistan"}</div>
+                      <div className="product-image">
+                         <img src={program.image} alt="Products Image" style={{ maxWidth: "360px", height: "auto" }} />
+                      </div>
+
+                      <div class="product-info" style="background-color: #f0f0f0;">
+                        <h4 class="text-center" style="font-size: 25px !important;">
+                          <a href="product-details.html">{program.program_name}</a>
+                        </h4>
+                        <div class="text-center mb-30">
+                          <span class="price text-center" style="font-size: 23px !important;">
+                            {program.program_rate ? pound + program.program_rate : "Any amount"}
+                          </span>
+                        </div>
+                        <div class="text-center">
+                          <div class="tp-donate__button">
+                            <a class="main-btn primary-btn" href={program.donation_url}>Donate Now</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+

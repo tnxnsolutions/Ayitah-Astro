@@ -1,0 +1,132 @@
+---
+
+import Mainlayout from '../layouts/mainlayout.astro'
+
+---
+<Mainlayout>
+<!--====== Start Page-title-area section ======-->
+<section class="page-title-area text-white bg_cover" style="background-image: url(assets/images/bg/page-bg-1.jpg);">
+    <div class="container">
+        <!--======  Page-title-Inner ======-->
+        <div class="page-title-inner text-center">
+            <h1 class="page-title">Contact Us</h1>
+            <div class="gd-breadcrumb">
+                <span class="breadcrumb-entry"><a href="index.html">Home</a></span>
+                <span class="separator"></span>
+                <span class="breadcrumb-entry active">Contact Us</span>
+            </div>
+        </div>
+    </div>
+</section><!--====== End Page-title-area section ======-->
+<!--====== Start Contact Info section ======-->
+<section class="contact-info-section pt-100">
+    <div class="container">
+        <div class="contact-info-wrapper wow fadeInUp">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <!--====== Contact Info Item ======-->
+                    <div class="contact-info-item text-center">
+                        <div class="icon">
+                            <img src="assets/images/icon/icon-1.png" alt="icon">
+                        </div>
+                        <div class="info">
+                            <span class="title">Location</span>
+                            <h6>55 Main Street, 2nd Floor
+                                Melbourne, Australia</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <!--====== Contact Info Item ======-->
+                    <div class="contact-info-item text-center">
+                        <div class="icon">
+                            <img src="assets/images/icon/icon-2.png" alt="icon">
+                        </div>
+                        <div class="info">
+                            <span class="title">Email Address</span>
+                            <h6><a href="mailto:support@gmail.com">support@gmail.com</a></h6>
+                            <h6><a href="mailto:infogarden.net">infogarden.net</a></h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <!--====== Contact Info Item ======-->
+                    <div class="contact-info-item text-center">
+                        <div class="icon">
+                            <img src="assets/images/icon/icon-3.png" alt="icon">
+                        </div>
+                        <div class="info">
+                            <span class="title">Phone No</span>
+                            <h6><a href="tel:+000(123)45688">+000 (123) 456 88</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--====== End Contact Info section ======-->
+<!--====== Start Contact section ======-->
+<section class="contact-section pt-95 pb-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <!--====== Section-title ======-->
+                <div class="section-title wow fadeInRight mb-50">
+                    <span class="sub-title"><i class="flaticon-plant"></i>Contact Us</span>
+                    <h2>Ready to Work 
+                        With Us</h2>
+                </div>
+            </div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--=== Map Box ===-->
+                    <div class="map-box wow fadeInLeft mb-50">
+                        <iframe src="https://maps.google.com/maps?q=new%20york&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!--====== Contact Form Wrapper ======-->
+                    <div class="contact-form-wrapper contact-form mb-50 wow fadeInRight">
+                        <form id="contactForm" action="assets/php/form-process.php" name="contactForm" method="post">
+                            <div class="form_group form-group">
+                                <label><i class="far fa-user"></i></label>
+                                <input type="text" class="form_control" placeholder="Full Name" id="name" name="name" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form_group form-group">
+                                <label><i class="far fa-envelope"></i></label>
+                                <input type="email" class="form_control" placeholder="Email Address" id="email" name="email" required data-error="Please enter your email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form_group form-group">
+                                <label><i class="far fa-phone-plus"></i></label>
+                                <input type="text" class="form_control" placeholder="Phone Number" id="phone_number" name="phone_number" data-error="Please enter your Number">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form_group form-group">
+                                <label><i class="far fa-map-marker-exclamation"></i></label>
+                                <input type="text" class="form_control" placeholder="Subject" id="subject" name="subject" data-error="Please enter your Subject">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form_group form-group">
+                                <label><i class="far fa-pen-fancy"></i></label>
+                                <textarea class="form_control" rows="3" placeholder="Message" id="message" name="message" required data-error="Please enter your name"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form_group form-group">
+                                <button class="main-btn primary-btn">Send Message</button>
+                                <div id="msgSubmit" class="hidden"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--====== End Contact section ======-->
+
+
+
+</Mainlayout>

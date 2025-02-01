@@ -1,0 +1,100 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Quran School Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Empowering Education for Future Generations
+                            </h3>
+                            <p>
+                                Join our Quran School Appeal to support the
+                                education and spiritual development of children
+                                in need. Your contribution helps us provide
+                                access to Quranic education, empowering future
+                                generations with knowledge and faith.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Education
+                                    Empowerment: Building futures.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Quranic
+                                    Learning: Nurturing faith.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Knowledge for
+                                    All: Supporting education.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Making a difference.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg"
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg"
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg"
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>Impact of Your Contribution</h3>
+                <p>
+                    Your contribution to our Quran School Appeal has a profound
+                    impact on the lives of children. By providing access to
+                    Quranic education, you're empowering them with knowledge,
+                    faith, and the tools they need to succeed in life. Together,
+                    we can create a brighter future for generations to come.
+                </p>
+
+                <h3>Ways to Donate</h3>
+                <p>
+                    There are various ways you can contribute to our Quran
+                    School Appeal. Whether through monetary donations,
+                    volunteering your time as a teacher or mentor, or donating
+                    educational materials, your support ensures that children
+                    have access to Quranic education and spiritual guidance.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>

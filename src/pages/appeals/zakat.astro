@@ -1,0 +1,105 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Zakat Appeal"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Empowering Change Through Giving.
+                            </h3>
+                            <p>
+                                Al-Fakih Trust's Zakat Appeal is your opportunity
+                                to make a difference in the lives of those in
+                                need. Your Zakat has the power to transform
+                                communities, providing essential support and
+                                opportunities for those facing adversity. Join
+                                us in empowering change and building a brighter
+                                future for all.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Empowering
+                                    Communities.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Breaking the
+                                    Cycle of Poverty.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Providing
+                                    Essential Support.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Ensuring Dignity
+                                    and Opportunity.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg"
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>How Your Zakat Makes a Difference</h3>
+                <p>
+                    "Your Zakat is a lifeline for those in need, providing
+                    essential support such as food, healthcare, and education.
+                    With your generosity, we empower individuals and families to
+                    break free from poverty's grip, ensuring dignity and
+                    opportunity for all. Your contribution doesn't just change
+                    lives; it transforms communities, offering hope and a path
+                    to a better tomorrow."
+                </p>
+
+                <h3>Ways to Give</h3>
+                <p>
+                    Explore convenient ways to give your Zakat to Al-Fakih Trust
+                    and make a difference in the lives of those in need. Whether
+                    through online donations, bank transfers, or in-person
+                    contributions, your support helps us continue our vital work
+                    of empowering communities and providing essential aid."
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>
+

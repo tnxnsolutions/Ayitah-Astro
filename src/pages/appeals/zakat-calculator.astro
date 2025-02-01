@@ -1,0 +1,105 @@
+---
+import Mainlayout from "../../layouts/mainlayout.astro";
+import DonationCard from "../../components/DonationCard.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+---
+
+<Mainlayout>
+    <Breadcrumb
+        appealname="Zakat Calculator"
+        appealimage="/assets/images/bg/page-bg-1.jpg"
+    />
+        <DonationCard program={[]} />
+
+    <!--====== Start Project-Details section ======-->
+    <section class="project-details-section">
+        <div class="container">
+            <div class="project-details-wrapper pb-60">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="project-info mb-30 wow fadeInLeft">
+                            <h3 class="title">
+                                Calculate Your Contribution Towards Positive
+                                Change
+                            </h3>
+                            <p>
+                                Join our Zakat Calculator Appeal to accurately
+                                determine your Zakat contribution and make a
+                                positive impact on those in need. Our Zakat
+                                calculator simplifies the process, ensuring your
+                                donation goes towards providing essential aid,
+                                support, and opportunities to individuals and
+                                families facing adversity.
+                            </p>
+                            <ul class="check-style-one mb-60">
+                                <li>
+                                    <i class="far fa-check"></i>Calculate Your
+                                    Zakat: Determine your contribution.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Precision
+                                    Giving: Making an accurate impact.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Simplified
+                                    Donation Process: Streamlining your support.
+                                </li>
+                                <li>
+                                    <i class="far fa-check"></i>Impactful
+                                    Contribution: Empowering positive change.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="sidebar-widget-area">
+                            <div class="block-image wow fadeInDown">
+                                <img
+                                    src="/assets/images/gallery/project-single-1.jpg" 
+                                    alt="Project Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInDown">
+                            <img
+                                src="/assets/images/gallery/project-single-1.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="block-image wow fadeInUp">
+                            <img
+                                src="/assets/images/gallery/project-single-2.jpg" 
+                                alt="Project Image"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <h3>How to Use the Zakat Calculator</h3>
+                <p>
+                    Our Zakat Calculator is easy to use. Simply enter your
+                    financial details, and it will calculate the amount of Zakat
+                    you owe based on Islamic principles. This ensures that your
+                    contribution is accurate and goes towards supporting those
+                    in need during Ramadan and beyond.
+                </p>
+
+                <h3>Impact of Your Contribution</h3>
+                <p>
+                    Your contribution through our Zakat Calculator Appeal has a
+                    direct and meaningful impact on individuals and families
+                    facing adversity. By accurately calculating and donating
+                    your Zakat, you're providing essential aid, support, and
+                    opportunities to empower positive change in their lives.
+                    Together, we can make a difference by ensuring that everyone
+                    receives the assistance and support they deserve.
+                </p>
+            </div>
+        </div>
+    </section><!--====== End Project-Details section ======-->
+</Mainlayout>
