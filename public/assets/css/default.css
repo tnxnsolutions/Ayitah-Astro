@@ -211,7 +211,7 @@
   margin-bottom: 45px; }
 
 .mb-50 {
-  margin-bottom: 50px; }
+  margin-bottom: 25px; }
 
 .mb-55 {
   margin-bottom: 55px; }
@@ -940,8 +940,8 @@
 .pb-55 {
   padding-bottom: 55px; }
 
-.pb-60 {
-  padding-bottom: 60px; }
+/* .pb-60 {
+  padding-bottom: 60px; } */
 
 .pb-65 {
   padding-bottom: 65px; }
@@ -958,8 +958,8 @@
 .pb-85 {
   padding-bottom: 85px; }
 
-.pb-90 {
-  padding-bottom: 90px; }
+/* .pb-90 {
+  padding-bottom: 90px; } */
 
 .pb-95 {
   padding-bottom: 95px; }
